@@ -7,22 +7,32 @@
   <meta name="description" content="Ethan Cook is a Brigham Young University pre-business student pursuing a career in wealth management and finance." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="#top">Ethan M. Cook</a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#contact">Contact</a>
-      </div>
+  <aside class="side-nav" aria-label="Section navigation">
+    <a class="side-brand" href="#top" aria-label="Ethan Cook home">EC</a>
+    <nav class="side-tabs">
+      <a href="#about"><span>About</span></a>
+      <a href="#experience"><span>Experience</span></a>
+      <a href="#education"><span>Education</span></a>
+      <a href="#leadership"><span>Leadership</span></a>
+      <a href="#contact"><span>Contact</span></a>
     </nav>
+    <a class="side-resume" href="Ethan-Cook-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+  </aside>
+
+  <header class="mobile-header">
+    <a class="brand" href="#top">Ethan M. Cook</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#contact">Contact</a>
+    </div>
   </header>
 
   <main id="top">
@@ -31,25 +41,15 @@
         <div class="hero-copy">
           <p class="eyebrow">Brigham Young University · Finance & Wealth Management</p>
           <h1>Ethan Cook</h1>
-          <p class="hero-subtitle">Aspiring wealth management professional with a foundation in financial analysis, client service, and relationship-driven problem solving.</p>
+          <p class="hero-subtitle">Aspiring wealth management professional with interests in financial analysis, client relationships, and long-term financial planning.</p>
           <div class="hero-actions">
             <a class="button primary" href="Ethan-Cook-Resume.pdf" target="_blank" rel="noopener">View Resume</a>
             <a class="button secondary" href="https://www.linkedin.com/in/ethancook34" target="_blank" rel="noopener">LinkedIn</a>
             <a class="button secondary" href="mailto:ethanmcook@gmail.com">Contact</a>
           </div>
         </div>
-        <div class="hero-card" aria-label="Profile summary">
+        <div class="hero-card" aria-label="Profile photo">
           <img src="headshot.jpg" alt="Professional headshot of Ethan Cook" class="headshot" />
-          <div class="profile-card">
-            <h2>Ethan M. Cook</h2>
-            <p>Pre-business student at BYU focused on wealth management, financial analysis, and long-term client relationships.</p>
-            <dl>
-              <div><dt>Location</dt><dd>Provo, Utah</dd></div>
-              <div><dt>Education</dt><dd>Brigham Young University</dd></div>
-              <div><dt>Expected Graduation</dt><dd>April 2028</dd></div>
-              <div><dt>Email</dt><dd><a href="mailto:ethanmcook@gmail.com">ethanmcook@gmail.com</a></dd></div>
-            </dl>
-          </div>
         </div>
       </div>
     </section>
