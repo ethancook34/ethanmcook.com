@@ -17,3 +17,16 @@ if (toggle && links) {
     });
   });
 }
+
+const backToTop = document.querySelector('.back-to-top');
+const aboutSection = document.getElementById('about');
+
+function updateBackToTopVisibility() {
+  if (!backToTop || !aboutSection) return;
+  const triggerPoint = aboutSection.offsetTop - 140;
+  backToTop.classList.toggle('visible', window.scrollY >= triggerPoint);
+}
+
+window.addEventListener('scroll', updateBackToTopVisibility, { passive: true });
+window.addEventListener('resize', updateBackToTopVisibility);
+updateBackToTopVisibility();
