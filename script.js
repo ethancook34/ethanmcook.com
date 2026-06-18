@@ -1,21 +1,19 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
-const year = document.querySelector('#year');
+const toggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.nav-links');
+const year = document.getElementById('year');
 
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+if (year) year.textContent = new Date().getFullYear();
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', String(isOpen));
+if (toggle && links) {
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 
-  navLinks.querySelectorAll('a').forEach((link) => {
+  links.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
     });
   });
 }
