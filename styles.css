@@ -38,7 +38,7 @@
   aspect-ratio: 1;
   min-height: 0;
   justify-self: center;
-  border: 1px solid var(--gold);
+  border: none;
   border-radius: 20%;
   overflow: hidden;
 }
