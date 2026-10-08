@@ -48,7 +48,7 @@
   height: 100%;
   min-height: 0;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 20%;
 }
 
 .hero-image::before {
